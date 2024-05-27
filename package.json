@@ -1,0 +1,25 @@
+{
+  "name": "wdio_civi",
+  "version": "1.0.0",
+  "description": "automated tests for CIVI assignment",
+  "main": "index.js",
+  "scripts": {
+    "allure-report": "npx allure generate && npx allure open",
+    "test": "wdio run ./wdio.conf.ts"
+  },
+  "author": "SK",
+  "license": "ISC",
+  "dependencies": {
+    "wdio": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^5.1.4",
+    "@wdio/allure-reporter": "^8.37.0",
+    "@wdio/cli": "^8.36.1",
+    "@wdio/jasmine-framework": "^8.36.1",
+    "@wdio/local-runner": "^8.36.1",
+    "@wdio/spec-reporter": "^8.36.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

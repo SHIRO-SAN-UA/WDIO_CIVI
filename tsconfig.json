@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "sourceMap": false,
+      "alwaysStrict": true,
+          "moduleResolution": "node",
+          "resolveJsonModule": true,
+          "allowSyntheticDefaultImports": true,
+      "types": [
+        "node",
+        "@wdio/globals/types",
+        "@types/jasmine",
+        "expect-webdriverio"
+      ],
+      "target": "es2022"
+    }
+  }
