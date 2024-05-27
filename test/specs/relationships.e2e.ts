@@ -18,6 +18,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", null, null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -36,6 +37,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", "01/01/2020", "01/01/2030");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -54,6 +56,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", null, "01/01/2030");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -72,6 +75,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", "01/01/2020", null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -90,6 +94,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", "01/01/2030", null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -108,6 +113,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", "01/01/2030", "01/01/2040");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -126,6 +132,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", null, "01/01/2020");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -144,6 +151,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", "01/01/2010", "01/01/2020");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -162,6 +170,7 @@ describe("Individual to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Child of", "01/01/2020", "01/01/2010");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Assert the error message is displayed");
     await expect(await addRelationshipPage.enterDateErrorMessage).toHaveText("The relationship end date cannot be prior to the start date.");
@@ -182,6 +191,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", null, null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -200,6 +210,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", "01/01/2020", "01/01/2030");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -218,6 +229,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", null, "01/01/2030");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -236,6 +248,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", "01/01/2020", null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -254,6 +267,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", "01/01/2030", null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -272,6 +286,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", "01/01/2030", "01/01/2040");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -290,6 +305,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", null, "01/01/2020");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -308,6 +324,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", "01/01/2010", "01/01/2020");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -326,6 +343,7 @@ describe("Household to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Household Member is", "01/01/2020", "01/01/2010");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Assert the error message is displayed");
     await expect(await addRelationshipPage.enterDateErrorMessage).toHaveText("The relationship end date cannot be prior to the start date.");
@@ -346,6 +364,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", null, null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -364,6 +383,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", "01/01/2020", "01/01/2030");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -382,6 +402,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", null, "01/01/2030");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -400,6 +421,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", "01/01/2020", null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -418,6 +440,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", "01/01/2030", null);
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -436,6 +459,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", "01/01/2030", "01/01/2040");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -454,6 +478,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", null, "01/01/2020");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -472,6 +497,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", "01/01/2010", "01/01/2020");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Refresh page and navigate to Relationships");
     await browser.refresh();
@@ -490,6 +516,7 @@ describe("Organization to Individual Relationships", () => {
 
     allureReporter.addStep("Create new relationship with Contact B");
     await addRelationshipPage.createNewRelationship(contactBName, "Employer of", "01/01/2020", "01/01/2010");
+    await addRelationshipPage.saveRelationshipButton.click();
 
     allureReporter.addStep("Assert the error message is displayed");
     await expect(await addRelationshipPage.enterDateErrorMessage).toHaveText("The relationship end date cannot be prior to the start date.");

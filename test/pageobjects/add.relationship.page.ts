@@ -41,10 +41,16 @@ class AddRelationshipPage extends Page {
     return $(`//input[@class='crm-form-text crm-form-date hasDatepicker crm-placeholder-icon' and @aria-label='End Date']`);
   }
   public get linkedInField() {
-    return $(`//input[await (await this.pageTitle).click();@id='custom_54_-1']`);
+    return $(`//input[@id='custom_54_-1']`);
   }
   public get websiteField() {
     return $(`//input[@id='custom_55_-1']`);
+  }
+  public get invalidWebsiteUrlErrorMessage() {
+    return $(`//label[@id='custom_55_-1-error']`);
+  }
+  public get invalidLinkedinUrlErrorMessage() {
+    return $(`//label[@id='custom_54_-1-error']`);
   }
   public get attachmentButton() {
     return $(`//input[@id='custom_53_-1']`);
@@ -118,8 +124,21 @@ class AddRelationshipPage extends Page {
     await browser.keys("Enter");
     await this.contactB.click();
     await this.setDates(startdate, enddate);
-    await (await this.saveRelationshipButton).click();
+    // await (await this.saveRelationshipButton).click();
   }
+  public async setLinkedIn(linkedIn: string) {
+    await this.linkedInField.setValue(linkedIn);
+  }
+
+  public async setWebsite(website: string) {
+    await this.websiteField.setValue(website);
+  }
+
+  // public async uploadAttachment() {
+  //   const path = require("path");
+  //   const filePath = path.join(__dirname, "./Resume_compressed.pdf");
+  //   fileUpload.setValue(filePath);
+  // }
 }
 
 export default new AddRelationshipPage();

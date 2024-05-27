@@ -32,9 +32,7 @@ export const config: Options.Testrunner = {
   //
   specs: ["./test/specs/**/*.ts"],
   // Patterns to exclude.
-  exclude: [
-    // 'path/to/excluded/files'
-  ],
+  // exclude: ["./test/specs/relationships.e2e.ts"],
   //
   // ============
   // Capabilities
@@ -147,13 +145,13 @@ export const config: Options.Testrunner = {
     // The Jasmine framework allows interception of each assertion in order to log the state of the application
     // or website depending on the result. For example, it is pretty handy to take a screenshot every time
     // an assertion fails.
-    expectationResultHandler: function (passed, assertion) {
-      // do something
-      if (passed) {
-        return;
-      }
-      browser.saveScreenshot(`assertionError_${assertion.error.message}.png`);
-    },
+    // expectationResultHandler: function (passed, assertion) {
+    //   // do something
+    //   if (passed) {
+    //     return;
+    //   }
+    //   browser.saveScreenshot(`assertionError_${assertion.error.message}.png`);
+    // },
   },
 
   //
